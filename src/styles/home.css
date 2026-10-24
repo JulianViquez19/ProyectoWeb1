@@ -1,0 +1,119 @@
+.home {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: 100vh;
+}
+
+.left-panel {
+  position: relative;
+
+  background-image: url("/images/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 4rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(2,6,23,.92),
+      rgba(15,23,42,.88)
+    );
+}
+
+.brand {
+  max-width: 650px;
+  color: white;
+}
+
+.tag {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  padding: .6rem 1rem;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,.15);
+
+  backdrop-filter: blur(8px);
+}
+
+.brand h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+
+  margin-bottom: 1.5rem;
+}
+
+.brand p {
+  font-size: 1.2rem;
+
+  line-height: 1.8;
+
+  opacity: .9;
+}
+
+.right-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 450px;
+
+  padding: 3rem;
+}
+
+.welcome-card h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+  color: #111827;
+}
+
+.welcome-card p {
+  color: #6b7280;
+
+  margin-bottom: 2rem;
+
+  line-height: 1.8;
+}
+
+.login-btn {
+  display: inline-block;
+
+  background: #2563eb;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  padding: 1rem 2rem;
+
+  border-radius: 12px;
+
+  transition: .3s;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+}
